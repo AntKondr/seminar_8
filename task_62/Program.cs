@@ -5,7 +5,7 @@ Console.Write("seminar_8 task_62\n\n");
 void print2Darray(ref int[,] array){
     for (int row = 0; row < array.GetLength(0); row++){
         for (int col = 0; col < array.GetLength(1); col++){
-            Console.Write($"{array[row, col]}\t");
+            Console.Write($"{array[row, col]:d2} ");
         }
         Console.Write("\n");
     }
@@ -59,7 +59,7 @@ bool no_way(ref int up_edge,
 }
 
 
-int[,] matrix = new int[10, 10];
+int[,] matrix = new int[4, 4];
 
 int up_edge = 0;
 int left_edge = -1;
